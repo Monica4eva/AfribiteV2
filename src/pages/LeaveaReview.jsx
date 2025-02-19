@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";  
 import React, { useState } from 'react';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
 import shoppingcart from "../assets/images/shoppingcart.png";
-import search from "../assets/images/search.png"; // Add search icon path
+import search from "../assets/images/search.png";  
 import Zara from "../assets/images/Zara.png";
 
 function LeaveaReview() {
@@ -19,12 +19,12 @@ function LeaveaReview() {
         console.log('Rating:', rating);
         console.log('Review:', reviewText);
         alert('Thank you for your review!');
-        setReviewText("");  // Clear review text after submission
+        setReviewText("");   
     };
 
     return (
         <div className="font-sans bg-white min-h-screen flex flex-col items-center px-6 py-10">
-            {/* Header */}
+            
             <header className="py-4 px-6 laptop:px-20 flex items-center justify-between bg-white text-black w-full">
                 <div className="flex items-center gap-3">
                     <img src={logo} alt="Afribite Logo" className="h-10" />
@@ -39,7 +39,7 @@ function LeaveaReview() {
                         <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
                     </nav>
                 <div className="flex items-center space-x-4">
-                    {/* Search Bar with Icon */}
+                     
                     <div className="relative">
                         <input 
                             type="text" 
@@ -54,7 +54,7 @@ function LeaveaReview() {
                 </div>
             </header>
             
-            {/* Review Buttons */}
+            
             <div className="flex gap-4 mt-6">
                 <button className="px-4 py-2 border border-orange-600 rounded-lg">Chicken Republic, Nigeria Restaurants</button>
                 <button className="px-4 py-2 border border-orange-600 rounded-lg">Amala-Gbegiri-Ewedu</button>
@@ -62,7 +62,7 @@ function LeaveaReview() {
                 <button className="px-4 py-2 bg-orange-600 text-white rounded-lg">Leave a Review</button>
             </div>
             
-            {/* Review Section */}
+             
             <div className="mt-10 text-center">
                 <h2 className="text-2xl font-semibold">Leave a review</h2>
                 <p className="text-gray-600 mt-2">Your input is important in helping us curate our meals and services to satisfy your needs and hunger.</p>
@@ -89,7 +89,7 @@ function LeaveaReview() {
                 <button onClick={handleSubmit} className="mt-4 px-6 py-2 bg-orange-600 text-white rounded-lg">Submit</button>
             </div>
             
-            {/* User Profile */}
+             
             <div className="absolute top-80 right-10 flex items-center gap-3">
                 <img src={Zara} alt="User Profile" className="w-36 h-36 rounded-full border border-gray-300" />
                 <span className="text-lg font-semibold">Zara</span>
