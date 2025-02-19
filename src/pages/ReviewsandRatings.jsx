@@ -101,8 +101,12 @@ function ReviewsandRatings() {
                             <button className="bg-[#FF5722] hover:bg-[rgb(230,74,25)] text-white px-12 py-2 rounded flex items-center gap-2">
                                 <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Next
                             </button>
-                            <button className="px-4 py-2 bg-gray-400 text-white rounded-lg">Leave a Review</button>
-                        </div>
+                            </div>
+                            <Link to="/leave-a-review">
+                                                <button className="bg-[#FF5722] hover:bg-[rgb(230,74,25)] text-white px-12 py-2 rounded flex items-center gap-2">
+                                                    <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Leave a Review
+                                                </button>
+                                                </Link>
                     </div>
                 </div>
 

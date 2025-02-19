@@ -47,9 +47,11 @@ function FAQs() {
         {/* Orange Background Wrapper */}
         <div className="bg-[#E2725B] p-6 rounded-lg">
           {/* Back Button */}
-          <button className="bg-white text-[#E2725B] border-yellow-500 px-6 py-2 rounded flex items-center gap-2 mb-4">
-            <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Back
-          </button>
+          <Link to="/support-dashboard">
+                              <button className="bg-[#FF5722] hover:bg-[rgb(230,74,25)] text-white px-12 py-2 rounded flex items-center gap-2">
+                                  <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Back
+                              </button>
+                              </Link>
 
           {/* FAQ Image */}
           <div className="flex justify-center">
