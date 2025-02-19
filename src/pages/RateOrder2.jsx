@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";  
 import React, { useState } from 'react';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
@@ -7,7 +7,7 @@ import shoppingcart from "../assets/images/shoppingcart.png";
 import Ratefood from "../assets/images/Ratefood.png";
 import add from "../assets/images/add.png";
 import remove from "../assets/images/remove.png";
-import search from "../assets/images/search.png"; // Make sure this is the correct path
+import search from "../assets/images/search.png";  
 import { useNavigate } from 'react-router-dom';
 
 function RateOrder() {
@@ -35,8 +35,8 @@ function RateOrder() {
 
     const handleRateOrder = () => {
         console.log("Rating submitted!");
-        navigate('/thank-you'); // Replace '/thank-you' with your actual route
-        closeModal(); // Close the modal after rating
+        navigate('/thank-you'); 
+        closeModal();  
     };
 
     return (
@@ -55,12 +55,12 @@ function RateOrder() {
                         <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
                     </nav>
                 <div className="flex items-center gap-4">
-                    {/* Search Bar with Icon */}
+                   
                     <div className="relative">
                         <input
                             type="text"
                             placeholder="Search"
-                            className="border p-2 rounded-md pl-10" // Added padding for icon
+                            className="border p-2 rounded-md pl-10"  
                         />
                         <img
                             src={search}
@@ -137,7 +137,7 @@ function RateOrder() {
             <div className="flex justify-center gap-4 p-10 mt-10">
                 <button
                     className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md"
-                    onClick={openModal} // Open modal when Rate Order is clicked
+                    onClick={openModal}  
                 >
                     Rate Order
                 </button>
@@ -146,9 +146,9 @@ function RateOrder() {
                 </button>
             </div>
 
-            {/* The Modal */}
+             
             {isModalOpen && (
-                <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"> {/* Backdrop */}
+                <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-40"> 
                     <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-md z-50 shadow-md">
                         <h2 className="text-lg font-bold mb-4">How did you enjoy your meal?</h2>
                         <p className="text-gray-600 mb-6">Your feedback will be highly appreciated</p>
