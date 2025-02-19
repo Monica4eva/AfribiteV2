@@ -27,7 +27,7 @@ function ContactUs() {
                     </div>
                     <nav className="hidden laptop:flex space-x-6">
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
+                        <Link to="admin-home" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
                         <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
                         <Link to="/leave-a-review">
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>

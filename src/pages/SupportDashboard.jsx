@@ -44,7 +44,7 @@ function SupportDashboard() {
 
                 <main className="max-w-6xl mx-auto p-6 relative">
                     <h1 className="text-3xl text-white font-bold text-center mb-12">
-                        Hello, how can we help you today?
+                        Hello, how can we help you today? 
                     </h1>
 
                     <div className="flex items-center justify-center mb-12">

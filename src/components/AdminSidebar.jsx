@@ -114,12 +114,13 @@ const AdminSidebar = () => {
             Notifications
           </div>
         </NavLink>
-        <NavLink to="/support-dashboard">
-          <div onClick={() => setVisible(false)} className="flex items-center gap-4">
-            <FaPhoneAlt className="text-[#E2725B]" />
-            Support
-          </div>
-        </NavLink>
+        <NavLink to="/support-dashboard"> 
+  <div onClick={() => setVisible(false)} className="flex items-center gap-4">
+    <FaHeadset className="text-[#E2725B]" />
+    Support
+  </div>
+</NavLink>
+
        
       <NavLink to="/live-chat-about">
           <div onClick={() => setVisible(false)} className="flex items-center gap-4">
