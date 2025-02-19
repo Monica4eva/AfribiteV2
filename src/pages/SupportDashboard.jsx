@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";  
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
@@ -77,7 +77,7 @@ function SupportDashboard() {
                 <h2 className="text-2xl font-bold text-left mb-6">Quick Links</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    {/* FAQ Button */}
+                     
                     <Link to="/faqs">
                         <div className="bg-white p-6 rounded-lg cursor-pointer">
                             <h3 className="text-xl font-bold mb-2">FAQ</h3>
@@ -85,7 +85,7 @@ function SupportDashboard() {
                         </div>
                     </Link>
 
-                    {/* Get Support Button */}
+                     
                     <Link to="/get-support">
                         <div className="bg-white p-6 rounded-lg cursor-pointer">
                             <h3 className="text-xl font-bold mb-2">GET SUPPORT</h3>
@@ -93,7 +93,7 @@ function SupportDashboard() {
                         </div>
                     </Link>
 
-                    {/* Reviews Button */}
+                    
                     <Link to="/reviews-and-ratings">
                         <div className="bg-white p-6 rounded-lg cursor-pointer">
                             <h3 className="text-xl font-bold mb-2">REVIEWS</h3>
