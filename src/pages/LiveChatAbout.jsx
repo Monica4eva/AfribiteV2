@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import React from "react";
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
@@ -14,7 +14,7 @@ import search from "../assets/images/search.png";
 const LiveChatAbout = () => {
     return (
         <div className="font-sans min-h-screen bg-white flex flex-col">
-            {/* Header */}
+             
             <header className="py-4 px-6 laptop:px-20 flex items-center justify-between bg-white text-black border-b border-gray-300">
                 <div className="flex items-center gap-3">
                     <img src={logo} alt="Afribite Logo" className="h-10" />
@@ -53,7 +53,7 @@ const LiveChatAbout = () => {
                 </div>
             </header>
 
-            {/* Main Chat Section */}
+             
             <main className="w-full flex-grow">
                 <div className="bg-[#E2725B] py-6 px-4">
                     <div className="max-w-6xl mx-auto">
@@ -67,7 +67,7 @@ const LiveChatAbout = () => {
                     </div>
                 </div>
 
-                {/* Chat Messages */}
+                 
                 <div className="bg-white p-6 rounded-lg shadow max-w-6xl mx-auto mt-6">
                     <div key="1" className="mb-4">
                         <p className="bg-gray-100 p-3 rounded-lg text-left">
@@ -118,7 +118,7 @@ const LiveChatAbout = () => {
                     </div>
                 </div>
 
-                {/* Chat Input Section */}
+                 
                 <div className="max-w-6xl mx-auto w-full flex items-center border-t border-gray-300 p-4 mt-4">
                     <div className="relative flex-grow">
                         <input
