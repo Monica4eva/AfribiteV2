@@ -138,3 +138,19 @@ Afribite is an innovative food delivery platform that focuses on promoting Afric
 ## Links
 
 - [Link to hosted page:](https://afribite.vercel.app/)
+
+Cohort 11 2025 Team 3
+### Monica Dube-Sekhwela
+
+-Created Contact Us page
+Created Support Dashboard
+Created Review and Ratings
+Created Leave a review
+Created Rate Order page1
+Created Rate Order page2 - press rate order response button to fill in feedback
+Created Rate Order page3 - press rate order response button to fill in feedback
+Created Get Support Page
+Created Live Chat About Page
+Created Frequently Asked Questions (FAQs)
+Create button on Admin dashboard for Support to link Support Dashboard
+Ensure buttons had links to make active
