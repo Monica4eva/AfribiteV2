@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
@@ -49,11 +50,12 @@ function ReviewsandRatings() {
                 {/* Navigation bar on the same line as the logo */}
                 <nav className="flex items-center space-x-6 ml-8 ">
                 <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-  <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
-</nav>
+                                        <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
+                                        <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                                        <Link to="/leave-a-review" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</Link>
+                                        
+                                        <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
+                                    </nav>
 
                 <div className="flex items-center gap-4">
                     <input type="text" placeholder="Search" className="border p-2 rounded-md" />

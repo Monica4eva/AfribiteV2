@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import React from "react";
 import logo from "../assets/images/logo.png";
 import backbutton from "../assets/images/backbutton.png";
@@ -18,12 +19,13 @@ function FAQs() {
           <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
         </div>
         <nav className="hidden laptop:flex space-x-6">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">Dashboard</a>
-          <a href="#" className="hover:underline">Order</a>
-          <a href="#" className="hover:underline">Reviews</a>
-          <a href="#" className="underline">About</a>
-        </nav>
+          <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
+                                 <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
+                                 <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                                 <Link to="/reviews-and-ratings" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</Link>
+                                 
+                                 <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
+                             </nav>
         <div className="flex items-center space-x-4">
           {/* Search Bar with Icon */}
           <div className="relative">

@@ -57,12 +57,13 @@ function RateOrder3() {
                     <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
                 </div>
                 <nav className="flex-1 flex justify-center gap-6 text-gray-600">
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
-                </nav>
+                <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
+                        <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
+                        <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                        <Link to="/reviews-and-ratings" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</Link>
+                        
+                        <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
+                    </nav>
                 <div className="flex items-center gap-4">
                     {/* Search Bar with Icon */}
                     <div className="relative">

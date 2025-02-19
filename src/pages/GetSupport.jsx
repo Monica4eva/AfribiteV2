@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import logo from "../assets/images/logo.png";
 import cross from "../assets/images/cross.png";
 import arrowDown from "../assets/images/arrowdown.png";
@@ -17,12 +18,13 @@ function GetSupport() {
                     <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
                 </div>
                 <nav className="hidden laptop:flex space-x-6">
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
-                </nav>
+                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
+                                            <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
+                                            <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                                            <Link to="/reviews-and-ratings" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</Link>
+                                            
+                                            <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
+                                        </nav>
                 <div className="flex items-center space-x-4">
                     <div className="relative">
                         <input type="text" placeholder="Search" className="px-3 py-2 pl-10 rounded text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FF5722]" />
@@ -44,10 +46,29 @@ function GetSupport() {
                             GET SUPPORT
                         </h2>
                         <div className="flex space-x-4">
-                            <button className="bg-[#ffffff] hover:bg-[#FF5722] text-black py-2.5 px-5 rounded text-lg w-full">FAQ</button>
-                            <button className="bg-[#ffffff] hover:bg-[#FF5722] text-black py-2.5 px-5 rounded text-lg w-full">Live chat</button>
-                            <button className="bg-[#ffffff] hover:bg-[#FF5722] text-black py-2.5 px-5 rounded text-lg w-full">Get support</button>
-                            <button className="bg-[#ffffff] hover:bg-[#FF5722] text-black py-2.5 px-5 rounded text-lg w-full">Contact us</button>
+                        <Link to="/faqs">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            FAQs
+        </button>
+    </Link>
+
+    <Link to="/live-chat-about">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Live chat
+        </button>
+    </Link>
+
+    <Link to="/get-support">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Get support
+        </button>
+    </Link>
+
+    <Link to="/contact-us">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Contact us
+        </button>
+    </Link>
                         </div>
                     </div>
                 </div>

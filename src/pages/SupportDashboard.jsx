@@ -23,11 +23,12 @@ function SupportDashboard() {
                         <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
                     </div>
                     <nav className="hidden laptop:flex space-x-6">
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
+                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
+                        <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
                         <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
+                        <Link to="/reviews-and-ratings" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</Link>
+                        
+                        <Link to="/live-chat-about" className="hover:underline focus:text-orange-600 active:text-orange-600">About</Link>
                     </nav>
 
                     <div className="flex items-center space-x-4">
