@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";  
 import logo from "../assets/images/logo.png";
 import cross from "../assets/images/cross.png";
 import arrowDown from "../assets/images/arrowdown.png";
@@ -7,7 +7,7 @@ import notification from "../assets/images/notification.png";
 import shoppingcart from "../assets/images/shoppingcart.png";
 import backbutton from "../assets/images/backbutton.png";
 import arrowRight from "../assets/images/arrowright.png";
-import search from "../assets/images/search.png"; // Import search icon
+import search from "../assets/images/search.png";  
 
 function GetSupport() {
     return (
