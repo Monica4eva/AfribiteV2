@@ -41,6 +41,7 @@ import RateOrder from "./pages/RateOrder";
 import RateOrder2 from "./pages/RateOrder2";
 import LeaveaReview from "./pages/LeaveaReview";
 import RateOrder3 from "./pages/RateOrder3";
+ 
 
 
 
@@ -62,6 +63,7 @@ function App() {
               <Route path="/rate-order2" element={<RateOrder2 />}></Route>
               <Route path="/leave-a-review" element={<LeaveaReview />}></Route> 
               <Route path="/rate-order3" element={<RateOrder3 />}></Route>
+               
                <Route element={<MainLayout />}>
                 <Route path="/" element={<LandingPage />} />
                 {/* Other routes that needs the navbar can be nested here if needed */}

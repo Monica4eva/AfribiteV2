@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import React, { useState } from 'react';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
@@ -31,7 +32,9 @@ function RateOrder() {
                 <nav className="flex-1 flex justify-center gap-6 text-gray-600">
                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
+                    <Link to="/rate-order2">
                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
+                    </Link>
                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
                     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
                 </nav>
@@ -120,9 +123,11 @@ function RateOrder() {
                 <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md">
                     Rate Order
                 </button>
+                <Link to="/leave-a-review">
                 <button className="border border-orange-500 hover:bg-orange-100 text-orange-500 font-bold py-2 px-6 rounded-md">
                     Leave a Review
                 </button>
+                </Link>
             </div>
         </div>
     );

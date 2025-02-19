@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
@@ -22,12 +23,12 @@ function SupportDashboard() {
                         <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
                     </div>
                     <nav className="hidden laptop:flex space-x-6">
-                    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
-</nav>
+                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
+                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
+                        <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
+                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
+                    </nav>
 
                     <div className="flex items-center space-x-4">
                         <input
@@ -75,22 +76,36 @@ function SupportDashboard() {
                 <h2 className="text-2xl font-bold text-left mb-6">Quick Links</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div className="bg-white p-6 rounded-lg">
-                        <h3 className="text-xl font-bold mb-2">FAQ</h3>
-                        <p>Questions about Afribite and services</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg">
-                        <h3 className="text-xl font-bold mb-2">GET SUPPORT</h3>
-                        <p>Information on how to navigate the site</p>
-                    </div>
-                    <div className="bg-white p-6 rounded-lg">
-                        <h3 className="text-xl font-bold mb-2">REVIEWS</h3>
-                        <p>Here's what our customers are saying about us.</p>
-                    </div>
+                    {/* FAQ Button */}
+                    <Link to="/faqs">
+                        <div className="bg-white p-6 rounded-lg cursor-pointer">
+                            <h3 className="text-xl font-bold mb-2">FAQ</h3>
+                            <p>Questions about Afribite and services</p>
+                        </div>
+                    </Link>
+
+                    {/* Get Support Button */}
+                    <Link to="/get-support">
+                        <div className="bg-white p-6 rounded-lg cursor-pointer">
+                            <h3 className="text-xl font-bold mb-2">GET SUPPORT</h3>
+                            <p>Information on how to navigate the site</p>
+                        </div>
+                    </Link>
+
+                    {/* Reviews Button */}
+                    <Link to="/reviews-and-ratings">
+                        <div className="bg-white p-6 rounded-lg cursor-pointer">
+                            <h3 className="text-xl font-bold mb-2">REVIEWS</h3>
+                            <p>Here's what our customers are saying about us.</p>
+                        </div>
+                    </Link>
+
+                    <Link to="/contact-us">
                     <div className="bg-white p-6 rounded-lg">
                         <h3 className="text-xl font-bold mb-2">SEND REQUEST</h3>
                         <p>Contact us through a specially prepared form</p>
                     </div>
+                </Link>
                 </div>
             </main>
 

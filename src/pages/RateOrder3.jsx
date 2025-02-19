@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import React, { useState } from 'react';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";

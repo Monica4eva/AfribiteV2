@@ -35,12 +35,12 @@ function GetSupport() {
             </header>
 
             <main className="w-full">
-                <div className="bg-orange-600 py-6 px-4">
+                <div className="bg-[#E2725B] py-6 px-4">
                     <div className="max-w-6xl mx-auto">
                         <button className="bg-[#FF5722] hover:bg-[rgb(230,74,25)] text-white px-12 py-2 rounded flex items-center gap-2">
                             <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Back
                         </button>
-                        <h2 className="text-center text-3xl font-bold mt-6 text-black bg-orange-600 p-4 rounded-lg">
+                        <h2 className="text-center text-3xl font-bold mt-6 text-black bg-[#E2725B] p-4 rounded-lg">
                             GET SUPPORT
                         </h2>
                         <div className="flex space-x-4">

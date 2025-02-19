@@ -50,7 +50,7 @@ function ReviewsandRatings() {
                 <nav className="flex items-center space-x-6 ml-8 ">
                 <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-    <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
+  <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
     <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
 </nav>

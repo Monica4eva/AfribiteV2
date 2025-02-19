@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
@@ -12,6 +13,7 @@ import emailicon from "../assets/images/emailicon.png";
 import locationicon from "../assets/images/locationicon.png";
 import ellipse1 from "../assets/images/ellipse1.png";
 import ellipse2 from "../assets/images/ellipse2.png";
+import search from "../assets/images/search.png";
 
 function ContactUs() {
     return (
@@ -26,8 +28,10 @@ function ContactUs() {
                     <nav className="hidden laptop:flex space-x-6">
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</a>
-                        <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</a>
+                        <Link to="/rate-order2" className="hover:underline focus:text-orange-600 active:text-orange-600">Order</Link>
+                        <Link to="/leave-a-review">
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Reviews</a>
+                        </Link>
                         <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">About</a>
                     </nav>
                     
@@ -51,9 +55,11 @@ function ContactUs() {
                                 </header>
 
                 <main className="max-w-6xl mx-auto p-6">
+                    <Link to="/adminhome/dashboard">
                     <button className="bg-[#FF5722] hover:bg-[rgb(230,74,25)] text-white px-12 py-2 rounded flex items-center gap-2">
                         <img src={backbutton} alt="Back Button" className="w-4 h-4" /> Back
                     </button>
+                    </Link>
 
                     <h2 className="text-center text-3xl font-bold mt-6 text-[#080302]">CONTACT US</h2>
                 </main>
@@ -62,12 +68,34 @@ function ContactUs() {
             {/* Main content container */}
             <main className="max-w-6xl mx-auto p-6">
                 {/* Buttons container */}
-                <div className="flex space-x-4 mt-4">
-                    <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">FAQs</button>
-                    <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">Live chat</button>
-                    <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">Get support</button>
-                    <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">Contact us</button>
-                </div>
+               
+
+<div className="flex space-x-4 mt-4">
+    <Link to="/faqs">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            FAQs
+        </button>
+    </Link>
+
+    <Link to="/live-chat-about">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Live chat
+        </button>
+    </Link>
+
+    <Link to="/get-support">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Get support
+        </button>
+    </Link>
+
+    <Link to="/contact-us">
+        <button className="bg-[#ffffff] hover:bg-[#F57C00] text-[#212121] hover:text-[#f3f2f0] px-24 py-2 rounded border-2 border-[#FF9800] hover:border-[#F57C00]">
+            Contact us
+        </button>
+    </Link>
+</div>
+
 
                 {/* Contact Info and Form container */}
                 <div className="grid laptop:grid-cols-2 gap-6 mt-6">
