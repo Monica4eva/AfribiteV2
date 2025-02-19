@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom"; 
 import React, { useState } from 'react';
 import logo from "../assets/images/logo.png";
 import person from "../assets/images/person.png";
@@ -39,17 +39,17 @@ function RateOrder() {
                     </nav>
                 <div className="flex items-center gap-4">
                     <div className="relative">
-                        {/* Wrap the input and position the search icon */}
+                         
                         <input
                             type="text"
                             placeholder="Search"
-                            className="border p-2 rounded-md pl-10" // Added padding-left to make room for the icon
+                            className="border p-2 rounded-md pl-10"  
                         />
-                        {/* Search icon */}
+                         
                         <img
                             src={search}
                             alt="Search Icon"
-                            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5" // Position the icon correctly
+                            className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5"  
                         />
                     </div>
                     <img src={person} alt="Profile" className="h-6" />
