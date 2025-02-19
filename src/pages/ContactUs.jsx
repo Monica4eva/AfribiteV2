@@ -18,7 +18,7 @@ import search from "../assets/images/search.png";
 function ContactUs() {
     return (
         <div className="font-sans bg-white-100">
-            {/* Orange background section */}
+            
             <div className="bg-[#E2725B]">
                 <header className="py-8 px-6 laptop:px-20 laptop:pr-6 tablet:p-6 flex items-center justify-between flex-wrap font-pop bg-[#fdfdfb] relative">
                     <div className="flex w-36 gap-3.5 items-center">
@@ -62,11 +62,11 @@ function ContactUs() {
 
                     <h2 className="text-center text-3xl font-bold mt-6 text-[#080302]">CONTACT US</h2>
                 </main>
-            </div> {/* Orange background ends here */}
+            </div>  
 
-            {/* Main content container */}
+             
             <main className="max-w-6xl mx-auto p-6">
-                {/* Buttons container */}
+                 
                
 
 <div className="flex space-x-4 mt-4">
@@ -96,9 +96,9 @@ function ContactUs() {
 </div>
 
 
-                {/* Contact Info and Form container */}
+                
                 <div className="grid laptop:grid-cols-2 gap-6 mt-6">
-                    {/* Contact Info */}
+                    
                     <div className="bg-[#E2725B] text-white p-6 rounded-lg relative">
                         <p className="text-3xl text-white mb-4">Contact Information</p>
                         <p className="text-gray-100 mb-4">Say something to start a live chat!</p>
@@ -118,7 +118,7 @@ function ContactUs() {
                             <span className="text-white">132 Dartmouth Street, Boston, MA 02156, UK</span>
                         </div>
 
-                        {/* Social Media Icons */}
+                        
                         <div className="absolute left-0 bottom-0 flex space-x-4 mb-4 ml-4">
                             <span className="bg-white p-2 rounded-full">
                                 <img src={social2} alt="Phone Icon" className="w-6 h-6" />
@@ -131,7 +131,7 @@ function ContactUs() {
                             </span>
                         </div>
 
-                        {/* Two Icons at the Bottom Right */}
+                        
                         <div className="absolute right-0 bottom-0 flex flex-col space-y-2 mb-4 mr-4">
                         <span>
                         <img src={ellipse1} alt="Icon 4" className="w-6 h-6" />
@@ -142,7 +142,7 @@ function ContactUs() {
 </div>
                     </div>
 
-                    {/* Contact Form */}
+                    
                     <div className="bg-white p-6 rounded-lg">
                         <form>
                             <div className="grid grid-cols-2 gap-4">
