@@ -4,8 +4,8 @@ import person from "../assets/images/person.png";
 import notification from "../assets/images/notification.png";
 import shoppingcart from "../assets/images/shoppingcart.png";
 import Zara from "../assets/images/Zara.png";
-import backbutton from "../assets/images/backbutton.png"; // Ensure backbutton is imported
-import reviewpic from "../assets/images/reviewpic.png"; // Ensure reviewpic is imported
+import backbutton from "../assets/images/backbutton.png";  
+import reviewpic from "../assets/images/reviewpic.png";  
 
 function ReviewsandRatings() {
     const reviews = [
@@ -47,7 +47,7 @@ function ReviewsandRatings() {
                     <p className="text-xl text-orange-600 font-bold">AFRIBITE</p>
                 </div>
 
-                {/* Navigation bar on the same line as the logo */}
+       
                 <nav className="flex items-center space-x-6 ml-8 ">
                 <a href="#" className="hover:underline focus:text-orange-600 active:text-orange-600">Home</a>
                                         <Link to="/adminhome/dashboard" className="hover:underline focus:text-orange-600 active:text-orange-600">Dashboard</Link>
